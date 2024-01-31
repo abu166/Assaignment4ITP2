@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Integrate</title>
+    <title>Thank You</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to the Integrate Page</h1>
-    <div class="square"></div>
+   <h1>Welcome to the Integrate Page</h1>
+   <div class="square"></div>
 
-    <h2>Fruits:</h2>
-    <ul>
-        {% for fruit in fruits %}
-            <li>{{ fruit }}</li>
-        {% endfor %}
-    </ul>
+   <h2>Fruits:</h2>
+<ul>
+    {% for fruit in fruits %}
+        <li>{{ fruit }}</li>
+    {% endfor %}
+</ul>
 
     <ul>
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
         <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
     </ul>
 </body>
 </html>
